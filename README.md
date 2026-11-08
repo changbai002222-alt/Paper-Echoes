@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="纸上回音 Logo" width="160" style="border-radius: 24px; box-shadow: 0 8px 24px rgba(6, 182, 212, 0.35);" />
+  <img src="assets/icon.png" alt="纸上回音 Icon" width="140" style="border-radius: 20px; box-shadow: 0 8px 24px rgba(6, 182, 212, 0.35);" />
 </p>
 
 # 纸上回音 · Paper Echoes
@@ -21,10 +21,6 @@
 
 ## 🎨 应用徽标（Icon）视觉寓意
 
-<p align="center">
-  <img src="assets/banner_logo.png" alt="纸上回音 Banner Logo" width="600" />
-</p>
-
 - **翻飞的书卷（Paper）**：象征厚重的原始材料与知识基底；
 - **奔涌的青碧流光（Cyan Wave）**：象征从文字中抽丝剥茧提炼出的深刻逻辑与认知脉络；
 - **回荡的金色声波（Echoes）**：象征多角色对谈与声音复刻，让思想不仅能被阅读，更能被聆听；
@@ -42,22 +38,6 @@
 3. **双人对谈播客**：一键将长文自动编排为类似 **NotebookLM Audio Overview** 的**男女声轻松对话播客（云希 × 晓晓）**，像两位好友在咖啡馆喝咖啡一样，用幽默接地气的闲聊拆解深度硬核知识！
 
 > 💡 **项目团队**：柏雯博、兰欣（人工智能赛道比赛定稿作品）
-
----
-
-## 🖥️ 软件工作台实机全景 (Workbench)
-
-软件界面严格统一为图标同款的 **「深海暗夜青金（Midnight Cyan & Gold）」** 质感，界面克制内敛，完全聚焦于文字与声音的创作体验：
-
-<p align="center">
-  <img src="assets/app_screenshot.png" alt="纸上回音 工作台实机截图" width="100%" style="border-radius: 8px; border: 1px solid #1a3045; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
-</p>
-
-### 界面四大核心功能分区：
-1. **左上角：主流大模型引擎中心**（支持 DeepSeek-V3/R1、通义千问、Kimi、GLM 等多厂商热插拔）；
-2. **左中侧：参考材料投喂池**（原生拖拽支持 PDF、Word、Markdown、TXT，毫秒级纯文本提取）；
-3. **左下方：声音工作坊与音色库**（免 Key 微软公共神经音色内置，支持自录音色极速复刻）；
-4. **中右部：双栏沉浸创作与多模态分发区**（万字长文/双人对谈播客/划词微调/一键复制微信公众号富文本排版）。
 
 ---
 
@@ -103,8 +83,8 @@ flowchart TD
 ### 1. 👥 首创「双人轻松对谈播客」（中文版 NotebookLM Audio Overview）
 两位好友一唱一和、在轻松闲聊中把深奥道理讲明白：
 - **AI 自动角色分工**：
-  - **[云希]（男声 · 好奇型主理人）**：活跃接地气、爱抛梗、负责替听众追问反常识疑点（*“等等，平时练习分数涨了48%，怎么闭卷一考反而倒扣了17%？这太反常了吧？”*）；
-  - **[晓晓]（女声 · 深度观察员）**：知性敏锐、善用生动比喻解释底层逻辑（*“对啊，问题就出在这里，学习就像练肌肉，AI把该你自己承受的负荷全抽走了……”*）。
+  - **[云希]（男声 · 好奇型主理人）**：活跃接地气、爱抛梗、负责替听众追问反常识疑点；
+  - **[晓晓]（女声 · 深度观察员）**：知性敏锐、善用生动比喻解释底层逻辑。
 - **极速并发合成技术**：
   - 系统使用 `asyncio.gather` 并发网络管线，将全剧本 20+ 轮交替对话在 **十几秒内** 多路并发合成完毕，并以毫秒级微小停顿自然缝合为一段完整的 MP3！
 
@@ -135,11 +115,9 @@ flowchart TD
 
 ```
 Paper-Echoes/
-├── assets/                                # 项目徽标、横幅与实机演示图
-│   ├── logo.png                           # 高清应用方形图标 (Cyan & Gold)
-│   ├── banner_logo.png                    # 横向完整品牌 Logo
-│   ├── app_screenshot.png                 # 桌面工作台实机截图
-│   └── mobile_screenshot.png              # 移动端全景截图
+├── assets/                                # 项目真实图标
+│   ├── icon.ico                           # 官方应用原生 Windows 图标
+│   └── icon.png                           # 高清渲染图标 (PNG 256x256)
 ├── docs/                                  # 详细文档与指南
 │   ├── USER_GUIDE.md                      # 软件使用与上手操作手册
 │   ├── DEFENSE_SPEECH_AND_QA.md           # 15分钟答辩发言稿与全景问答预案
@@ -148,7 +126,6 @@ Paper-Echoes/
 ├── presentation/                          # 答辩幻灯片与演示材料
 │   ├── 纸上回音_柏雯博 兰欣.pdf            # 15页答辩幻灯片高保真导出版
 │   └── 纸上回音_柏雯博 兰欣_含演讲备注版.pptx # 内置逐页演讲备注版 PPTX
-├── web/images/                            # Web 资源图标映射
 └── README.md                              # 项目说明主文档
 ```
 
